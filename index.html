@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlowCart - Modern E-Commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a href="index.html" class="brand">GlowCart</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+      </nav>
+      <button class="cart-button" id="cartButton">
+        <span>Cart</span>
+        <span class="badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Fresh Drops Every Day</p>
+          <h1>Discover essentials that make everyday living feel premium.</h1>
+          <p class="hero-text">Shop curated style, home gadgets, and beauty must-haves with bold visuals and a fast checkout experience.</p>
+          <div class="hero-actions">
+            <a href="shop.html" class="button button-primary">Start Shopping</a>
+            <a href="#highlights" class="button button-secondary">Why GlowCart?</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Featured product" />
+            <div class="hero-card-info">
+              <p>Featured pick</p>
+              <strong>Urban Comfort Hoodie</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights" id="highlights">
+      <div class="container features-grid">
+        <article class="feature-card">
+          <span class="feature-icon">✨</span>
+          <h2>Curated styles</h2>
+          <p>Every item is selected for quality, comfort, and modern taste.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">⚡</span>
+          <h2>Fast checkout</h2>
+          <p>Smooth ordering with secure payment and quick confirmation.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">🌍</span>
+          <h2>Worldwide shipping</h2>
+          <p>Enjoy premium delivery and track orders from anywhere.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="showcase">
+      <div class="container showcase-grid">
+        <div class="showcase-text">
+          <p class="eyebrow">Handpicked for you</p>
+          <h2>Elevate every room with standout essentials.</h2>
+          <p>The GlowCart collection blends aesthetics, comfort, and function so your daily routine looks and feels exceptional.</p>
+          <a href="shop.html" class="button button-outline">Browse the collection</a>
+        </div>
+        <div class="showcase-images">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=700&q=80" alt="Lifestyle product" />
+          <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=700&q=80" alt="Home decor" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; 2026 GlowCart. Designed for effortless shopping.</p>
+      <p>Built with HTML5, CSS3, and JavaScript.</p>
+    </div>
+  </footer>
+
+  <div class="cart-modal hidden" id="cartModal">
+    <div class="modal-panel">
+      <button class="modal-close" id="closeModal">×</button>
+      <h2>Your Cart</h2>
+      <p class="modal-message" id="cartMessage">Your cart is empty. Visit the shop to add something stylish!</p>
+      <div class="cart-items" id="cartItems"></div>
+      <button class="button button-primary modal-action hidden" id="checkoutButton">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop - GlowCart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a href="index.html" class="brand">GlowCart</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+      </nav>
+      <button class="cart-button" id="cartButtonShop">
+        <span>Cart</span>
+        <span class="badge" id="cartCountShop">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="shop-hero">
+      <div class="container">
+        <p class="eyebrow">Shop the latest</p>
+        <h1>Selected picks for modern living.</h1>
+        <p class="hero-text">From lifestyle accessories to wardrobe staples, add premium finds to your cart in one click.</p>
+      </div>
+    </section>
+
+    <section class="product-grid container">
+      <article class="product-card" data-id="1" data-name="Luxe Travel Bag" data-price="79">
+        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=650&q=80" alt="Luxe Travel Bag" />
+        <div class="product-details">
+          <h3>Luxe Travel Bag</h3>
+          <p>Stylish, durable, and perfect for quick getaways.</p>
+          <div class="product-footer">
+            <span class="price">$79</span>
+            <button class="button button-secondary add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-id="2" data-name="Glow Candle Set" data-price="34">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=650&q=80" alt="Glow Candle Set" />
+        <div class="product-details">
+          <h3>Glow Candle Set</h3>
+          <p>A calming scent collection for cozy nights.</p>
+          <div class="product-footer">
+            <span class="price">$34</span>
+            <button class="button button-secondary add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-id="3" data-name="Minimalist Sneakers" data-price="128">
+        <img src="https://images.unsplash.com/photo-1519741491680-824cc771e0b4?auto=format&fit=crop&w=650&q=80" alt="Minimalist Sneakers" />
+        <div class="product-details">
+          <h3>Minimalist Sneakers</h3>
+          <p>Comfort-driven design with polished style.</p>
+          <div class="product-footer">
+            <span class="price">$128</span>
+            <button class="button button-secondary add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-id="4" data-name="Aqua Hydration Bottle" data-price="26">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=650&q=80" alt="Aqua Hydration Bottle" />
+        <div class="product-details">
+          <h3>Aqua Hydration Bottle</h3>
+          <p>Keep your essentials chill in style.</p>
+          <div class="product-footer">
+            <span class="price">$26</span>
+            <button class="button button-secondary add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; 2026 GlowCart. Shop with confidence.</p>
+      <p>Created with HTML5, CSS3, and JavaScript.</p>
+    </div>
+  </footer>
+
+  <div class="cart-modal hidden" id="cartModalShop">
+    <div class="modal-panel">
+      <button class="modal-close" id="closeModalShop">×</button>
+      <h2>Your Cart</h2>
+      <p class="modal-message" id="cartMessageShop">Your cart is empty. Add something stylish.</p>
+      <div class="cart-items" id="cartItemsShop"></div>
+      <button class="button button-primary modal-action hidden" id="checkoutButtonShop">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
